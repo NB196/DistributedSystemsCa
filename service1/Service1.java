@@ -35,14 +35,13 @@ public final class Service1 {
     java.lang.String[] descriptorData = {
       "\n\016service1.proto\"%\n\016containsString\022\023\n\013fi" +
       "rstString\030\n \001(\t\"\037\n\013newResponse\022\020\n\010firstI" +
-      "nt\030\001 \001(\0052\361\001\n\010service1\022+\n\005Login\022\017.contain" +
+      "nt\030\001 \001(\0052\340\001\n\010service1\022+\n\005Login\022\017.contain" +
       "sString\032\017.containsString\"\000\022.\n\013GetFirstIn" +
-      "t\022\017.containsString\032\014.newResponse\"\000\022E\n\035Ge" +
-      "tFirstStringServerStreaming\022\017.containsSt" +
-      "ring\032\017.containsString\"\0000\001\022A\n\031SendStringC" +
-      "lientStreaming\022\017.containsString\032\017.contai" +
-      "nsString\"\000(\001B\032\n\014com.service1B\010Service1P\001" +
-      "b\006proto3"
+      "t\022\017.containsString\032\014.newResponse\"\000\0228\n\020Ge" +
+      "tAlarmBreaches\022\017.containsString\032\017.contai" +
+      "nsString\"\0000\001\022=\n\025SendAlarmSystemStatus\022\017." +
+      "containsString\032\017.containsString\"\000(\001B\032\n\014c" +
+      "om.service1B\010Service1P\001b\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {

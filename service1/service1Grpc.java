@@ -95,67 +95,67 @@ public final class service1Grpc {
   }
 
   private static volatile io.grpc.MethodDescriptor<com.service1.containsString,
-      com.service1.containsString> getGetFirstStringServerStreamingMethod;
+      com.service1.containsString> getGetAlarmBreachesMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
-      fullMethodName = SERVICE_NAME + '/' + "GetFirstStringServerStreaming",
+      fullMethodName = SERVICE_NAME + '/' + "GetAlarmBreaches",
       requestType = com.service1.containsString.class,
       responseType = com.service1.containsString.class,
       methodType = io.grpc.MethodDescriptor.MethodType.SERVER_STREAMING)
   public static io.grpc.MethodDescriptor<com.service1.containsString,
-      com.service1.containsString> getGetFirstStringServerStreamingMethod() {
-    io.grpc.MethodDescriptor<com.service1.containsString, com.service1.containsString> getGetFirstStringServerStreamingMethod;
-    if ((getGetFirstStringServerStreamingMethod = service1Grpc.getGetFirstStringServerStreamingMethod) == null) {
+      com.service1.containsString> getGetAlarmBreachesMethod() {
+    io.grpc.MethodDescriptor<com.service1.containsString, com.service1.containsString> getGetAlarmBreachesMethod;
+    if ((getGetAlarmBreachesMethod = service1Grpc.getGetAlarmBreachesMethod) == null) {
       synchronized (service1Grpc.class) {
-        if ((getGetFirstStringServerStreamingMethod = service1Grpc.getGetFirstStringServerStreamingMethod) == null) {
-          service1Grpc.getGetFirstStringServerStreamingMethod = getGetFirstStringServerStreamingMethod = 
+        if ((getGetAlarmBreachesMethod = service1Grpc.getGetAlarmBreachesMethod) == null) {
+          service1Grpc.getGetAlarmBreachesMethod = getGetAlarmBreachesMethod = 
               io.grpc.MethodDescriptor.<com.service1.containsString, com.service1.containsString>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.SERVER_STREAMING)
               .setFullMethodName(generateFullMethodName(
-                  "service1", "GetFirstStringServerStreaming"))
+                  "service1", "GetAlarmBreaches"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
                   com.service1.containsString.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
                   com.service1.containsString.getDefaultInstance()))
-                  .setSchemaDescriptor(new service1MethodDescriptorSupplier("GetFirstStringServerStreaming"))
+                  .setSchemaDescriptor(new service1MethodDescriptorSupplier("GetAlarmBreaches"))
                   .build();
           }
         }
      }
-     return getGetFirstStringServerStreamingMethod;
+     return getGetAlarmBreachesMethod;
   }
 
   private static volatile io.grpc.MethodDescriptor<com.service1.containsString,
-      com.service1.containsString> getSendStringClientStreamingMethod;
+      com.service1.containsString> getSendAlarmSystemStatusMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
-      fullMethodName = SERVICE_NAME + '/' + "SendStringClientStreaming",
+      fullMethodName = SERVICE_NAME + '/' + "SendAlarmSystemStatus",
       requestType = com.service1.containsString.class,
       responseType = com.service1.containsString.class,
       methodType = io.grpc.MethodDescriptor.MethodType.CLIENT_STREAMING)
   public static io.grpc.MethodDescriptor<com.service1.containsString,
-      com.service1.containsString> getSendStringClientStreamingMethod() {
-    io.grpc.MethodDescriptor<com.service1.containsString, com.service1.containsString> getSendStringClientStreamingMethod;
-    if ((getSendStringClientStreamingMethod = service1Grpc.getSendStringClientStreamingMethod) == null) {
+      com.service1.containsString> getSendAlarmSystemStatusMethod() {
+    io.grpc.MethodDescriptor<com.service1.containsString, com.service1.containsString> getSendAlarmSystemStatusMethod;
+    if ((getSendAlarmSystemStatusMethod = service1Grpc.getSendAlarmSystemStatusMethod) == null) {
       synchronized (service1Grpc.class) {
-        if ((getSendStringClientStreamingMethod = service1Grpc.getSendStringClientStreamingMethod) == null) {
-          service1Grpc.getSendStringClientStreamingMethod = getSendStringClientStreamingMethod = 
+        if ((getSendAlarmSystemStatusMethod = service1Grpc.getSendAlarmSystemStatusMethod) == null) {
+          service1Grpc.getSendAlarmSystemStatusMethod = getSendAlarmSystemStatusMethod = 
               io.grpc.MethodDescriptor.<com.service1.containsString, com.service1.containsString>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.CLIENT_STREAMING)
               .setFullMethodName(generateFullMethodName(
-                  "service1", "SendStringClientStreaming"))
+                  "service1", "SendAlarmSystemStatus"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
                   com.service1.containsString.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
                   com.service1.containsString.getDefaultInstance()))
-                  .setSchemaDescriptor(new service1MethodDescriptorSupplier("SendStringClientStreaming"))
+                  .setSchemaDescriptor(new service1MethodDescriptorSupplier("SendAlarmSystemStatus"))
                   .build();
           }
         }
      }
-     return getSendStringClientStreamingMethod;
+     return getSendAlarmSystemStatusMethod;
   }
 
   /**
@@ -213,9 +213,9 @@ public final class service1Grpc {
      *server streaming rpc
      * </pre>
      */
-    public void getFirstStringServerStreaming(com.service1.containsString request,
+    public void getAlarmBreaches(com.service1.containsString request,
         io.grpc.stub.StreamObserver<com.service1.containsString> responseObserver) {
-      asyncUnimplementedUnaryCall(getGetFirstStringServerStreamingMethod(), responseObserver);
+      asyncUnimplementedUnaryCall(getGetAlarmBreachesMethod(), responseObserver);
     }
 
     /**
@@ -223,9 +223,9 @@ public final class service1Grpc {
      *client streaming rpc.
      * </pre>
      */
-    public io.grpc.stub.StreamObserver<com.service1.containsString> sendStringClientStreaming(
+    public io.grpc.stub.StreamObserver<com.service1.containsString> sendAlarmSystemStatus(
         io.grpc.stub.StreamObserver<com.service1.containsString> responseObserver) {
-      return asyncUnimplementedStreamingCall(getSendStringClientStreamingMethod(), responseObserver);
+      return asyncUnimplementedStreamingCall(getSendAlarmSystemStatusMethod(), responseObserver);
     }
 
     @java.lang.Override public final io.grpc.ServerServiceDefinition bindService() {
@@ -245,19 +245,19 @@ public final class service1Grpc {
                 com.service1.newResponse>(
                   this, METHODID_GET_FIRST_INT)))
           .addMethod(
-            getGetFirstStringServerStreamingMethod(),
+            getGetAlarmBreachesMethod(),
             asyncServerStreamingCall(
               new MethodHandlers<
                 com.service1.containsString,
                 com.service1.containsString>(
-                  this, METHODID_GET_FIRST_STRING_SERVER_STREAMING)))
+                  this, METHODID_GET_ALARM_BREACHES)))
           .addMethod(
-            getSendStringClientStreamingMethod(),
+            getSendAlarmSystemStatusMethod(),
             asyncClientStreamingCall(
               new MethodHandlers<
                 com.service1.containsString,
                 com.service1.containsString>(
-                  this, METHODID_SEND_STRING_CLIENT_STREAMING)))
+                  this, METHODID_SEND_ALARM_SYSTEM_STATUS)))
           .build();
     }
   }
@@ -310,10 +310,10 @@ public final class service1Grpc {
      *server streaming rpc
      * </pre>
      */
-    public void getFirstStringServerStreaming(com.service1.containsString request,
+    public void getAlarmBreaches(com.service1.containsString request,
         io.grpc.stub.StreamObserver<com.service1.containsString> responseObserver) {
       asyncServerStreamingCall(
-          getChannel().newCall(getGetFirstStringServerStreamingMethod(), getCallOptions()), request, responseObserver);
+          getChannel().newCall(getGetAlarmBreachesMethod(), getCallOptions()), request, responseObserver);
     }
 
     /**
@@ -321,10 +321,10 @@ public final class service1Grpc {
      *client streaming rpc.
      * </pre>
      */
-    public io.grpc.stub.StreamObserver<com.service1.containsString> sendStringClientStreaming(
+    public io.grpc.stub.StreamObserver<com.service1.containsString> sendAlarmSystemStatus(
         io.grpc.stub.StreamObserver<com.service1.containsString> responseObserver) {
       return asyncClientStreamingCall(
-          getChannel().newCall(getSendStringClientStreamingMethod(), getCallOptions()), responseObserver);
+          getChannel().newCall(getSendAlarmSystemStatusMethod(), getCallOptions()), responseObserver);
     }
   }
 
@@ -374,10 +374,10 @@ public final class service1Grpc {
      *server streaming rpc
      * </pre>
      */
-    public java.util.Iterator<com.service1.containsString> getFirstStringServerStreaming(
+    public java.util.Iterator<com.service1.containsString> getAlarmBreaches(
         com.service1.containsString request) {
       return blockingServerStreamingCall(
-          getChannel(), getGetFirstStringServerStreamingMethod(), getCallOptions(), request);
+          getChannel(), getGetAlarmBreachesMethod(), getCallOptions(), request);
     }
   }
 
@@ -427,8 +427,8 @@ public final class service1Grpc {
 
   private static final int METHODID_LOGIN = 0;
   private static final int METHODID_GET_FIRST_INT = 1;
-  private static final int METHODID_GET_FIRST_STRING_SERVER_STREAMING = 2;
-  private static final int METHODID_SEND_STRING_CLIENT_STREAMING = 3;
+  private static final int METHODID_GET_ALARM_BREACHES = 2;
+  private static final int METHODID_SEND_ALARM_SYSTEM_STATUS = 3;
 
   private static final class MethodHandlers<Req, Resp> implements
       io.grpc.stub.ServerCalls.UnaryMethod<Req, Resp>,
@@ -455,8 +455,8 @@ public final class service1Grpc {
           serviceImpl.getFirstInt((com.service1.containsString) request,
               (io.grpc.stub.StreamObserver<com.service1.newResponse>) responseObserver);
           break;
-        case METHODID_GET_FIRST_STRING_SERVER_STREAMING:
-          serviceImpl.getFirstStringServerStreaming((com.service1.containsString) request,
+        case METHODID_GET_ALARM_BREACHES:
+          serviceImpl.getAlarmBreaches((com.service1.containsString) request,
               (io.grpc.stub.StreamObserver<com.service1.containsString>) responseObserver);
           break;
         default:
@@ -469,8 +469,8 @@ public final class service1Grpc {
     public io.grpc.stub.StreamObserver<Req> invoke(
         io.grpc.stub.StreamObserver<Resp> responseObserver) {
       switch (methodId) {
-        case METHODID_SEND_STRING_CLIENT_STREAMING:
-          return (io.grpc.stub.StreamObserver<Req>) serviceImpl.sendStringClientStreaming(
+        case METHODID_SEND_ALARM_SYSTEM_STATUS:
+          return (io.grpc.stub.StreamObserver<Req>) serviceImpl.sendAlarmSystemStatus(
               (io.grpc.stub.StreamObserver<com.service1.containsString>) responseObserver);
         default:
           throw new AssertionError();
@@ -525,8 +525,8 @@ public final class service1Grpc {
               .setSchemaDescriptor(new service1FileDescriptorSupplier())
               .addMethod(getLoginMethod())
               .addMethod(getGetFirstIntMethod())
-              .addMethod(getGetFirstStringServerStreamingMethod())
-              .addMethod(getSendStringClientStreamingMethod())
+              .addMethod(getGetAlarmBreachesMethod())
+              .addMethod(getSendAlarmSystemStatusMethod())
               .build();
         }
       }
