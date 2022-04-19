@@ -1,0 +1,35 @@
+//service definition
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "com.service1"; //this is where you define your package name
+option java_outer_classname = "Service1";
+
+service service1 { //creating grp service. You specify methods
+
+
+	//this is a unary. To create a stream, you need to include the stream keyword if you want it to be a stream.
+	rpc Login (containsString) returns (containsString) {
+	} //remote procedure call. ()specifying message type.Msg going from client to server. Sending same msg back and forth.
+	//^matched up rpc with method in server
+
+	//Unary. second rpc. Get an int from the server. when you add a new rpc, make sure you run maven build on the pom file
+	rpc GetFirstInt (containsString) returns (newResponse) {} //sending string over, but recieving the newResponse back
+
+	//server streaming rpc
+	rpc GetAlarmBreaches (containsString) returns (stream containsString) {}
+
+	//client streaming rpc.
+	rpc SendAlarmSystemStatus (stream containsString) returns (containsString) 	{}
+
+
+
+}
+
+message containsString{
+	string firstString = 10;
+}
+
+message newResponse { //int
+	int32 firstInt = 1;
+}

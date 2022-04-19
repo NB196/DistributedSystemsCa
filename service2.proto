@@ -1,0 +1,25 @@
+//service definition
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "com.service2"; //this is where you define your package name
+option java_outer_classname = "Service2";
+
+service service2 { //creating grp service. You specify methods
+
+
+	rpc enableAlarmOnApp(stream Msg) returns (stream Response){}
+
+}
+
+message Msg{
+	string msg = 10;
+	int32 true =1;
+	int32 false =2;
+}
+
+message Response{
+	string msg =10;
+	int32 true = 1;
+	int32 false =2;
+}
