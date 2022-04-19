@@ -7,7 +7,7 @@ import java.net.UnknownHostException;
 import javax.jmdns.JmDNS;
 import javax.jmdns.ServiceInfo;
 
-public class Service2Registration {
+public class Service3Registration {
 	public static void main(String[] args) {
 
 		// get a jMDNS instance
@@ -23,7 +23,7 @@ public class Service2Registration {
 			// service_name + service_type => simple_http._tcp.local
 			String service_name = "GrpcServer";
 			int service_port = 50051;
-			String service_desc = "Service 2 (Enable Alarm) Registration";
+			String service_desc = "Service 3 (Manage Security Footage) Registration";
 
 			// Create ServiceInfo -
 			// use the factory method to create the object
@@ -55,3 +55,4 @@ public class Service2Registration {
 	}
 
 }
+
